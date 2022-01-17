@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<!-- Mirrored from faimclimatique.ccfd-terresolidaire.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Jan 2022 17:10:49 GMT -->
+<head>
+    <link rel="stylesheet" href="cesium/Widgets/widgets.css">
+    <script src="cesium/Cesium.js"></script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>FAIM climatique - CCFD-Terre Solidaire</title>
+    <meta name="title" content="FAIM climatique - CCFD-Terre Solidaire">
+    <meta name="description" content="D’ici 2080, 600 millions de personnes supplémentaires souffriront de la faim. Changeons les prévisions.">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://faimclimatique.ccfd-terresolidaire.org/">
+    <meta property="og:title" content="FAIM climatique - CCFD-Terre Solidaire">
+    <meta property="og:description" content="D’ici 2080, 600 millions de personnes supplémentaires souffriront de la faim. Changeons les prévisions.">
+    <meta property="og:image" content="https://faimclimatique.ccfd-terresolidaire.org/share.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://faimclimatique.ccfd-terresolidaire.org/">
+    <meta property="twitter:title" content="FAIM climatique - CCFD-Terre Solidaire">
+    <meta property="twitter:description" content="FAIM climatique. D’ici 2080, 600 millions de personnes supplémentaires souffriront de la faim. Changeons les prévisions.">
+    <meta property="twitter:image" content="https://faimclimatique.ccfd-terresolidaire.org/share.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/favicon-16.5b036c65.png" sizes="16x16" />
+    <link rel="icon" type="image/png" href="assets/favicon-32.6cb5d496.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="assets/favicon-96.33344bfb.png" sizes="96x96" />
+    <link rel="icon" type="image/png" href="assets/favicon-192.18d2de80.png" sizes="192x192" />
+
+    
+    <script type="module" crossorigin src="assets/index.9b7d9155.js"></script>
+    <link rel="modulepreload" href="assets/vendor.c6a265cb.js">
+    <link rel="stylesheet" href="assets/index.ab901f40.css">
+  </head>
+  <body>
+    <!-- Google Tag Manager -->
+    <noscript>
+      <iframe src='http://www.googletagmanager.com/ns.html?id=GTM-WNNPCM'
+              height='0' width='0' style='display:none;visibility:hidden'></iframe>
+    </noscript>
+    <!-- End Google Tag Manager -->
+    <div id="sticky-header" class="fixed top-0 z-3 w-full pointer-events-none shadow-overlay">
+      <div class="flex items-center justify-between w-screen mx-auto max-w-6xl px-3 py-4 lg:py-8 z-1">
+        <a class="w-5/12 lg:w-auto pointer-events-auto"
+           href="https://ccfd-terresolidaire.org/" target="_blank" rel="noopener noreferrer">
+          <img src="assets/ccfd-logo.f3b1ab26.svg" alt="CCFD - Terre Solidaire">
+        </a>
+        <div class="ml-2 lg:ml-8 transition-opacity duration-500 pointer-events-auto" data-sticky-gift>
+          <a class="block uppercase bg-orange text-white text-xl lg:text-4xl
+                    px-3 lg:px-9 py-2 lg:py-4 font-futura font-extrabold
+                    transition-colors duration-200 hover:bg-orange-light"
+             href="https://soutenir.ccfd-terresolidaire.org/faim-climatique/~mon-don"
+             target="_blank" rel="noopener noreferrer"
+             data-dynamic-link
+          >
+            Faire un don
+          </a>
+        </div>
+      </div>
+    </div>
+    <header class="bg-header bg-shadow bg-center bg-cover" id="header">
+      <div class="max-w-6xl mx-auto px-5 lg:px-8 relative z-1 min-h-header pt-40 grid-header overflow-hidden">
+        <h1 class="uppercase font-futura font-extrabold self-end mb-5 lg:place-self-center title-shadow
+                   text-orange text-3xl md:text-5xl lg:text-7xl leading-none lg:leading-tight">
+          <span class="block opacity-0" data-animate-title>
+            Faim climatique<br>
+          </span>
+          <span class="block opacity-0 text-white text-xl md:text-3xl lg:text-5xl leading-none"
+                data-animate-title>
+            D'ici 2080, 600 millions de personnes supplémentaires souffriront de la faim.<br>
+          </span>
+          <span class="block opacity-0" data-animate-title>
+            Changeons les&nbsp;prévisions
+          </span>
+        </h1>
+        <button id="open-video" class="flex items-center place-self-start opacity-0" data-animate-title>
+          <svg viewBox="0 0 99 99" class="w-14 lg:w-24">
+            <circle cx="49.5" cy="49.5" r="49.5" fill="#ff671f"/>
+            <path d="M71 50 37 69V31Z" fill="#fff"/>
+          </svg>
+          <span class="text-white text-xl lg:text-4xl font-futura font-extrabold uppercase ml-3">
+            Voir&nbsp;la&nbsp;vidéo
+          </span>
+        </button>
+      </div>
+      <div class="absolute z-2 flex items-center w-full -bottom-7 lg:-bottom-10">
+        <div class="h-1 bg-white w-full"></div>
+        <a href="#tour" class="mx-4">
+          <svg class="w-14 lg:w-20" viewBox="0 0 85.26 85.26">
+            <defs><style>.cls-1{fill:none;stroke:#fff;stroke-linecap:round;stroke-width:4px}</style></defs>
+            <path class="cls-1" d="m24.3 37.54 18.33 18.33L61 37.54"/>
+            <path class="cls-1" d="M42.63 83.26a40.63 40.63 0 0 0 40.63-40.63h0a40.63 40.63 0 1 0-40.63 40.63Z"/>
+          </svg>
+        </a>
+        <div class="h-1 bg-white w-full"></div>
+      </div>
+    </header>
+    <div id="countries"><!-- Vue component --></div>
+    <section id="gift"
+      class="bg-previsions bg-shadow font-futura font-extrabold text-center text-white pt-17 pb-5">
+      <div class="max-w-5xl mx-auto px-8 relative z-1">
+        <p class="text-2xl lg:text-4xl uppercase mb-3">Changeons les prévisions !</p>
+        <p class="text-lg lg:max-w-1/2 mx-auto leading-5 mb-5">
+          Pour soutenir durablement la sécurité alimentaire des populations menacées par la faim climatique.
+        </p>
+        <div class="grid md:grid-cols-3 gap-2 md:gap-10 mt-8 my-2 lg:my-5">
+          <div class="grid-gift bg-blur text-black text-center pb-5">
+            <div class="bg-orange p-3">
+              <p class="uppercase text-black lg:text-2xl">Avec un don de </p>
+              <p class="text-white text-5xl lg:text-7xl">150 <span class="font-roboto font-black">€</span></p>
+            </div>
+            <div class="px-4">
+              <p class="uppercase pt-1 text-sm lg:text-base">Soit 53€ après déduction fiscale</p>
+              <img class="my-2 lg:my-4 mx-auto" src="assets/prev-1.ed17951a.svg" alt="">
+              <p class="mb-3 font-medium text-baseplus lg:text-xl leading-6">Vous contribuez à l’<strong class="font-extrabold text-base lg:text-lg leading-6">achat de matériel pour la mise en place d’un nouveau système d’irrigation</strong> et de conservation de l’eau dans un village au Timor-Leste.</p>
+            </div>
+            <a class="inline-block bg-orange text-white uppercase py-2
+                      font-futura font-extrabold text-2xl w-full max-w-7/10 self-end justify-self-center
+                      transition-colors duration-200 hover:bg-orange-light"
+               href="https://soutenir.ccfd-terresolidaire.org/faim-climatique/b?cid=826&amp;amount=15000"
+               target="_blank" rel="noopener noreferrer"
+               data-dynamic-link
+            >
+              Je fais un don
+            </a>
+          </div>
+          <div class="grid-gift bg-blur text-black text-center pb-5">
+            <div class="bg-orange p-3">
+              <p class="uppercase text-black lg:text-2xl">Avec un don de </p>
+              <p class="text-white text-5xl lg:text-7xl">250 <span class="font-roboto font-black">€</span></p>
+            </div>
+            <div class="px-4">
+              <p class="uppercase pt-1 text-sm lg:text-base">Soit 85€ après déduction fiscale</p>
+              <img class="my-2 lg:my-4 mx-auto" src="assets/prev-2.d51a5f7f.svg" alt="">
+              <p class="mb-3 font-medium text-baseplus lg:text-xl leading-6">Vous permettez aux petits paysans de Bolivie de restaurer des terres agricoles par l’agroforesterie grâce à l’<strong class="font-extrabold text-base lg:text-lg leading-6">achat de plantules ou de semences durables</strong></p>
+            </div>
+            <a class="inline-block bg-orange text-white uppercase py-2 font-futura font-extrabold
+                      text-2xl w-full max-w-7/10 self-end justify-self-center
+                      transition-colors duration-200 hover:bg-orange-light"
+               href="https://soutenir.ccfd-terresolidaire.org/faim-climatique/b?cid=826&amp;amount=25000"
+               target="_blank" rel="noopener noreferrer"
+               data-dynamic-link
+            >
+              Je fais un don
+            </a>
+          </div>
+          <div class="grid-gift bg-blur text-black text-center pb-5">
+            <div class="bg-orange p-3">
+              <p class="uppercase text-black lg:text-2xl">Avec un don de </p>
+              <p class="text-white text-5xl lg:text-7xl">375 <span class="font-roboto font-black">€</span></p>
+            </div>
+            <div class="px-4">
+              <p class="uppercase pt-1 text-sm lg:text-base">Soit 127,50€ après déduction fiscale</p>
+              <img class="my-2 lg:my-4 mx-auto" src="assets/prev-3.6a03d2cc.svg" alt="">
+              <p class="mb-3 font-medium text-baseplus lg:text-xl leading-6">Vous soutenez la <strong class="font-extrabold text-base lg:text-lg leading-6">formation de cinq producteurs au maraîchage agroécologique</strong> au Mali.</p>
+            </div>
+            <a class="inline-block bg-orange text-white uppercase py-2 font-futura font-extrabold
+                      text-2xl w-full max-w-7/10 self-end justify-self-center
+                      transition-colors duration-200 hover:bg-orange-light"
+               href="https://soutenir.ccfd-terresolidaire.org/faim-climatique/b?cid=826&amp;amount=37500"
+               target="_blank" rel="noopener noreferrer"
+               data-dynamic-link
+            >
+              Je fais un don
+            </a>
+          </div>
+        </div>
+        <div id="free-amount"></div>
+        <div class="max-w-2xl mx-auto lg:text-lg">
+          <p class="uppercase mb-1">Bénéficiez de votre réduction fiscale de 66 %</p>
+          <p class="leading-tight">
+            Vous pouvez déduire de votre impôt sur le revenu 66 % du montant de votre don, dans la limite de 20 % de votre revenu imposable.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="max-w-5xl mx-auto px-4 lg:px-8 py-8 lg:py-11 font-futura font-extrabold">
+      <p class="text-orange uppercase text-center text-2xl md:text-4xl mb-3">
+        Ensemble, soyons les forces du changement !
+      </p>
+      <p class="text-center md:text-lg leading-tight md:leading-6">
+        Dans près de 70 pays, le CCFD-Terre Solidaire agit contre toutes les formes d’injustices<br class="hidden lg:inline">
+        afin que chacun puisse vivre dignement, dans le respect de ses droits fondamentaux.<br>
+        <span class="text-orange">En premier lieu celui de ne pas souffrir de la faim.</span><br>
+        Loin des pratiques d’assistance, nous proposons et soutenons des solutions politiques<br class="hidden lg:inline">
+        et de terrain portées par des organisations partenaires et des collectifs citoyens du monde entier.
+      </p>
+      <div class="grid lg:grid-rows-2 lg:grid-cols-2 gap-10 lg:gap-18 uppercase text-sm lg:text-lg leading-none mt-8 lg:mt-20 lg:my-10">
+        <div class="flex items-center">
+          <img class="w-14 lg:w-auto mr-2 lg:mr-4" src="assets/force-1.225694f2.svg" alt="">
+          <p class="flex items-center">
+            <span class="text-orange text-4xl lg:text-6xl mr-2">580</span>
+            <span>Projets</span>
+          </p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-14 lg:w-auto mr-2 lg:mr-4" src="assets/force-2.dc25bbe3.svg" alt="">
+          <p class="flex items-center">
+            <span class="text-orange text-4xl lg:text-6xl mr-2">2,4</span>
+            <span>millions de bénéficiaires&nbsp;directs à&nbsp;travers&nbsp;le monde</span>
+          </p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-14 lg:w-auto mr-2 lg:mr-4" src="assets/force-3.26f7545e.svg" alt="">
+          <p class="flex items-center">
+            <span class="text-orange text-4xl lg:text-6xl mr-2">485</span>
+            <span>
+              organisations partenaires dans&nbsp;<span class="text-orange">67</span>&nbsp;pays du Sud et de l’Est
+            </span>
+          </p>
+        </div>
+        <div class="flex items-center">
+          <img class="w-14 lg:w-auto mr-2 lg:mr-4" src="assets/force-4.9da39901.svg" alt="">
+          <p class="flex items-center">
+            <span class="text-orange text-4xl lg:text-6xl mr-2">7&nbsp;208</span>
+            <span>bénévoles et<br><span class="text-orange">15 338</span> sympathisants en France</span>
+          </p>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-blue text-white p-4 text-center font-roboto">
+      <div class="max-w-5xl mx-auto">
+        <div class="flex flex-wrap items-center uppercase mb-5">
+          <a class="small-logo mr-auto"
+            href="https://ccfd-terresolidaire.org/" target="_blank" rel="noopener noreferrer">
+            <img class="pointer-events-auto" src="assets/ccfd-logo.f3b1ab26.svg" alt="CCFD - Terre Solidaire">
+          </a>
+          <a class="my-3 mx-1 md:mx-3" href="https://ccfd-terresolidaire.org/nous-connaitre/mentions-legales-et-376" target="_blank" rel="noopener noreferrer">
+            Mentions légales
+          </a>
+          <p class="my-3 mx-1 md:mx-5">
+            Suivez-nous
+          </p>
+          <a class="my-3 mx-1 md:mx-3 p-1"
+            href="https://www.facebook.com/ccfdterresolidaire/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/facebook.b955946a.svg" alt="Facebook">
+          </a>
+          <a class="my-3 mx-1 md:mx-3 p-1"
+            href="https://twitter.com/ccfd_tsolidaire" target="_blank" rel="noopener noreferrer">
+            <img src="assets/twitter.e226f101.svg" alt="Twitter">
+          </a>
+          <a class="my-3 mx-1 md:mx-3 p-1"
+            href="https://www.instagram.com/ccfd.tsolidaire/" target="_blank" rel="noopener noreferrer">
+            <img src="assets/instagram.320f1380.svg" alt="Instagram">
+          </a>
+          <a class="my-3 mx-1 md:mx-3 p-1"
+            href="https://www.youtube.com/user/ccfdterresolidaire" target="_blank" rel="noopener noreferrer">
+            <img src="assets/youtube.e7802774.svg" alt="Instagram">
+          </a>
+          <a class="my-3 mx-1 md:mx-3 p-1"
+            href="https://fr.linkedin.com/company/ccfd-terre-solidaire---official-page" target="_blank" rel="noopener noreferrer">
+            <img src="assets/linkedin.b4bf0515.svg" alt="Instagram">
+          </a>
+        </div>
+        <p class="text-sm mb-3">
+          Comité Catholique Contre la Faim et pour le Développement - Terre Solidaire<br>
+          4 rue Jean Lantier - 75001 Paris - France - Tel (+33)1 44 82 80 00 - N° SIREN 775 664 527 - N° RNA W759000066 - © CCFD-TS
+        </p>
+        <img class="block mx-auto lg:hidden my-3" src="assets/don-en-confiance.61743f62.svg" alt="Don en confiance">
+        <div class="flex justify-center">
+          <p class="text-sm">
+          Le CCFD-Terre Solidaire adhère aux règles de déontologie du Comité de la Charte « don en confiance » :<br>
+          fonctionnement statutaire et gestion désintéressée, rigueur de la gestion, transparence financière.
+          </p>
+          <img class="hidden lg:block mx-3" src="assets/don-en-confiance.61743f62.svg" alt="Don en confiance">
+        </div>
+        <img class="mx-auto my-3 w-30 :w-auto" src="assets/cesium-ion.3940834c.svg" alt="Cesium ion">
+        <span class="text-sm">Cookies : <a class="ot-sdk-show-settings cursor-pointer">je choisis</a></span>
+      </div>
+    </footer>
+    <div id="video-modal"></div>
+    
+
+    <!-- OneTrust Cookies Consent Notice start -->
+    <script
+        src="../cdn.cookielaw.org/scripttemplates/otSDKStub.js"
+        type="text/javascript"
+        charset="UTF-8"
+        data-domain-script="16a022a3-2eaf-4a7b-9ccb-b9c5f102aadf"
+    >
+    </script>
+    <script type="text/javascript">
+        // Required OneTrust Callback
+        function OptanonWrapper() { }
+    </script>
+    <!-- OneTrust Cookies Consent Notice end -->
+
+  </body>
+
+<!-- Mirrored from faimclimatique.ccfd-terresolidaire.org/ by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 12 Jan 2022 17:10:54 GMT -->
+</html>
